@@ -37,7 +37,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+if(!app.Environment.IsProduction()){
+    app.UseHttpsRedirection();
+}
 
 app.UseCors("Origins");
 
