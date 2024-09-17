@@ -6,7 +6,7 @@ using MongoDB.Entities;
 namespace Carta.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class GameController : ControllerBase
 {
     [HttpPost]
